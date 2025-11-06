@@ -27,3 +27,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=sunfish
 
 $(call inherit-product, vendor/google/sunfish/sunfish-vendor.mk)
+
+# Build Flags
+WITH_GMS := false
+WITH_MICROG := true
+TARGET_INCLUDE_JAMESDSP := true
+TARGET_FACE_UNLOCK_SUPPORTED := false
